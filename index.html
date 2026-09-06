@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Video Batch AI — ترجمة ودبلجة الفيديوهات</title>
+  <meta name="description" content="Video Batch AI لترجمة ودبلجة الفيديوهات بالذكاء الاصطناعي ومعالجة الدفعات في الخلفية.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#"><span class="brand-icon">▶</span><span>Video <b>Batch</b> <i>AI</i></span></a>
+    <nav>
+      <a href="#features">المميزات</a>
+      <a href="#workspace">مساحة العمل</a>
+      <a href="#how">كيف يعمل؟</a>
+    </nav>
+    <button class="ghost" onclick="document.getElementById('workspace').scrollIntoView({behavior:'smooth'})">ابدأ الآن</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="pill">✦ ترجمة فيديوهات بالذكاء الاصطناعي</div>
+        <h1>حوّل فيديوهاتك<br><span>إلى أي لغة.</span></h1>
+        <p>ترجمة، تعديل، ودبلجة الفيديوهات في مكان واحد. أضف حتى 25 فيديو واترك المعالجة تعمل في الخلفية.</p>
+        <div class="hero-actions">
+          <button class="primary" onclick="openPicker()">+ اختر الفيديوهات</button>
+          <button class="secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">اكتشف المميزات</button>
+        </div>
+        <div class="trust"><span>✓ حتى 25 فيديو</span><span>✓ SRT / VTT</span><span>✓ معالجة في الخلفية</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="glow"></div>
+        <div class="app-card">
+          <div class="mini-top"><span>9:41</span><span>Video <b>Batch</b> <i>AI</i></span><span>⚙</span></div>
+          <div class="mini-banner"><div class="fake-video">▶</div><div><strong>ابدأ مشروعك الجديد</strong><small>اختر فيديوهاتك وحوّلها إلى أي لغة تريد.</small><button onclick="openPicker()">اختر الفيديوهات +</button></div></div>
+          <div class="mini-title">المشاريع الأخيرة</div>
+          <div class="mini-task"><span class="thumb t1">▶</span><div><b>ترجمة من الإنجليزية إلى العربية</b><small>جارٍ المعالجة...</small><div class="bar"><em style="width:65%"></em></div></div><strong>65%</strong></div>
+          <div class="mini-task"><span class="thumb t2">▶</span><div><b>دبلجة من العربية إلى الإنجليزية</b><small class="ok">مكتمل ✓</small></div><strong>✓</strong></div>
+          <div class="mini-task"><span class="thumb t3">▶</span><div><b>تعديل النص والتوقيت</b><small class="ok">مكتمل ✓</small></div><strong>✓</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head"><span class="eyebrow">كل ما تحتاجه</span><h2>أدوات قوية، بواجهة بسيطة</h2><p>مصممة لتتعامل مع مشروع واحد أو دفعة كبيرة من الفيديوهات.</p></div>
+      <div class="features-grid">
+        <article><span>🌍</span><h3>أي لغة → أي لغة</h3><p>اكتشاف لغة المصدر واختيار اللغة المستهدفة بسهولة.</p></article>
+        <article><span>⚡</span><h3>معالجة دفعات</h3><p>أضف حتى 25 فيديو إلى قائمة واحدة وأدرها من مكان واحد.</p></article>
+        <article><span>🔔</span><h3>العمل في الخلفية</h3><p>تابع التقدم عبر الإشعارات حتى أثناء مغادرة مساحة العمل.</p></article>
+        <article><span>✎</span><h3>محرر ترجمة</h3><p>عدّل النص والتوقيت قبل تصدير النتيجة.</p></article>
+        <article><span>🔊</span><h3>دبلجة صوتية</h3><p>واجهة جاهزة لإضافة أصوات ودبلجة متزامنة في مرحلة المعالجة.</p></article>
+        <article><span>📄</span><h3>SRT و VTT</h3><p>صدّر ملفات الترجمة بجانب الفيديو النهائي.</p></article>
+      </div>
+    </section>
+
+    <section id="workspace" class="workspace section">
+      <div class="section-head"><span class="eyebrow">مساحة العمل</span><h2>جرّب مدير الفيديوهات</h2><p>هذه نسخة واجهة تفاعلية تجريبية للموقع.</p></div>
+      <div class="workspace-grid">
+        <aside class="panel settings">
+          <h3>إعدادات الترجمة</h3>
+          <label>لغة المصدر<select><option>اكتشاف تلقائي</option><option>العربية</option><option>English</option><option>Español</option><option>Français</option><option>Türkçe</option></select></label>
+          <label>اللغة الهدف<select><option>العربية</option><option>English</option><option>Español</option><option>Français</option><option>Português</option></select></label>
+          <label class="toggle"><span>ترجمة العناوين والوصف</span><input type="checkbox" checked><b></b></label>
+          <label class="toggle"><span>حفظ SRT + VTT</span><input type="checkbox" checked><b></b></label>
+          <button class="primary full" onclick="startAll()">▶ بدء المعالجة</button>
+        </aside>
+        <section class="panel queue">
+          <div class="queue-head"><div><h3>قائمة المعالجة</h3><small id="count">0 / 25 فيديو</small></div><button class="secondary" onclick="openPicker()">+ إضافة</button></div>
+          <input id="picker" type="file" accept="video/*" multiple hidden onchange="addFiles(event)">
+          <div id="empty" class="empty"><div>🎬</div><h3>لا توجد فيديوهات بعد</h3><p>اختر فيديو أو عدة فيديوهات لبدء مشروعك.</p><button class="primary" onclick="openPicker()">اختيار الفيديوهات</button></div>
+          <div id="tasks"></div>
+          <div class="publish-box">
+            <div><strong>حفظ ومشاركة النتائج</strong><small>بعد اكتمال المعالجة يمكنك حفظ الفيديو على جهازك أو مشاركته.</small></div>
+            <div class="publish-actions">
+              <button class="secondary" onclick="downloadCompleted()">⬇ حفظ على الجهاز</button>
+              <button class="secondary" onclick="shareCompleted()">↗ مشاركة</button>
+              <button class="primary" onclick="publishCompleted()">🌐 نشر</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    
+<section id="editor" class="section editor-section">
+  <div class="section-head">
+    <span class="eyebrow">محرر الترجمة</span>
+    <h2>عدّل الترجمة وشاهد النتيجة مباشرة</h2>
+    <p>افتح فيديو، حرّك شريط الزمن، وعدّل النص والتوقيت بسهولة قبل التصدير.</p>
+  </div>
+  <div class="editor-grid">
+    <div class="video-panel panel">
+      <div class="video-stage" id="videoStage">
+        <video id="editorVideo" controls playsinline></video>
+        <div id="subtitlePreview" class="subtitle-preview">أضف فيديو لعرض الترجمة هنا</div>
+        <div id="videoEmpty" class="video-empty">
+          <div>🎞️</div><strong>لم يتم اختيار فيديو</strong>
+          <button class="primary" onclick="openEditorPicker()">اختيار فيديو</button>
+        </div>
+      </div>
+      <input id="editorPicker" type="file" accept="video/*" hidden onchange="loadEditorVideo(event)">
+      <div class="video-controls">
+        <button class="secondary" onclick="openEditorPicker()">+ فتح فيديو</button>
+        <span id="timeLabel">00:00 / 00:00</span>
+      </div>
+      <input id="timeline" class="timeline" type="range" min="0" max="100" value="0" step="0.1" oninput="seekVideo(this.value)">
+    </div>
+
+    <div class="panel subtitle-panel">
+      <div class="editor-toolbar">
+        <div><h3>الترجمة</h3><small id="subtitleCount">3 مقاطع</small></div>
+        <button class="secondary" onclick="addSubtitle()">+ إضافة سطر</button>
+      </div>
+      <div id="subtitleList"></div>
+      <div class="export-row">
+        <button class="secondary" onclick="exportSRT()">⬇ SRT</button>
+        <button class="secondary" onclick="exportVTT()">⬇ VTT</button>
+        <button class="primary" onclick="toast('تم حفظ تعديلات الترجمة')">حفظ التعديلات</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section how">
+      <div class="section-head"><span class="eyebrow">ثلاث خطوات</span><h2>من الفيديو إلى النسخة المترجمة</h2></div>
+      <div class="steps"><div><b>01</b><h3>أضف الفيديوهات</h3><p>اختر حتى 25 فيديو في دفعة واحدة.</p></div><div><b>02</b><h3>اختر اللغة</h3><p>حدد لغة الهدف وإعدادات الترجمة والدبلجة.</p></div><div><b>03</b><h3>دع الذكاء الاصطناعي يعمل</h3><p>تابع التقدم ثم نزّل الفيديو والملفات الناتجة.</p></div></div>
+    </section>
+  </main>
+
+  <footer><div class="brand">Video <b>Batch</b> <i>AI</i></div><span>© 2026 Video Batch AI — نسخة ويب تجريبية</span></footer>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
